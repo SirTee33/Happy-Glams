@@ -1,0 +1,154 @@
+.p-dis{
+  display: flex;
+  margin: 0px 30px;
+  margin-top: 20px;
+}
+.p-dis-left{
+  display: flex;
+  gap: 17px;
+}
+.p-dis-img-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.p-dis-img-list img{
+  height: 140px;
+}
+.p-dis-main-img{
+  width: 360px;
+  height: 605px;
+}
+.p-dis-right{
+  margin: 0px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.p-dis-right h1{
+  color: #3d3d3d;
+  font-size: 40px;
+  font-weight: 700;
+}
+.p-dis-right-stars{
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  gap: 5px;
+  color: #1c1c1c;
+  font-size: 16px;
+}
+.p-dis-right-stars img{
+  height: 40px;
+  width: 40px;
+}
+.p-dis-right-prices{
+  display: flex;
+  margin: 30px 0px;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.p-dis-right-price-old{
+  color: #818181;
+  text-decoration: line-through;
+}
+.p-dis-right-price-new{
+  color: #ff4141;
+}
+.p-dis-right button{
+  padding: 20px 40px;
+  width: 190px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: hsl(0, 100%, 63%);
+  margin-bottom: 40px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.p-dis-right button:hover{
+  background: hsl(0, 100%, 43%);
+}
+.p-dis-right-categ{
+  margin-top: 10px;
+}
+.p-dis-right-categ span{
+  font-weight: 600;
+}
+.back-button{
+  padding: 20px 15px 15px 30px;
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 70px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #da3b8a;
+  margin-top: 30px;
+  background: #e2e2e2;
+}
+
+@media (max-width: 768px) {
+  .p-dis {
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+  }
+
+  .p-dis-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-dis-img-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .p-dis-img-list img {
+    height: 80px;
+    width: auto;
+  }
+
+  .p-dis-main-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .p-dis-right {
+    margin: 30px 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .p-dis-right h1 {
+    font-size: 28px;
+  }
+
+  .p-dis-right-stars img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .p-dis-right-prices {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .p-dis-right button {
+    width: 80%;
+  }
+
+  .back-button {
+    width: 80%;
+    text-align: center;
+  }
+}

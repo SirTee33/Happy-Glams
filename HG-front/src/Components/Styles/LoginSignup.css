@@ -1,0 +1,100 @@
+.l-signup{
+  width: 100%;
+  height: 125vh;
+  padding: 15px;
+}
+.l-signup-container{
+  width: 480px;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin:  50px auto;
+  padding: 40px 60px;
+  border-radius: 10px;
+}
+.l-signup-container h1{
+  text-align: center;
+  color: #333 ;
+  margin-bottom: 20px;
+}
+.l-signup-fields{
+  display: flex;
+  flex-direction: column;
+}
+.l-signup-fields input{
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #5c5c5c;
+  font-size: 16px;
+}
+.l-signup-container button{
+  width: 480px;
+  height: 72px;
+  background: hsl(0, 100%, 63%);
+  color: #fff;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.l-signup-container button:hover{
+  background: hsl(0, 100%, 53%);
+}
+.l-signup-login{
+  text-align: center;
+  margin-top: 20px;
+  color: #5c5c5c;
+  font-size: 16px;
+  
+}
+.sign-link{
+  color: hsl(340, 82%, 52%);
+  font-weight: 600;
+  text-decoration: none;
+}
+.sign-link:hover{
+  text-decoration: underline;
+}
+.l-signup-agree{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .l-signup-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .l-signup-container button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .l-signup-fields input {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .l-signup-agree {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .l-signup-login {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+

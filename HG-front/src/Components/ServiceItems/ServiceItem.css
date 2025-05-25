@@ -1,0 +1,23 @@
+.service-item:hover{
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+.service-item p{
+  margin: 6px 0px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.service-item img{
+  border-radius: 10px;
+}
+.service-item .title{
+  color: #374151;
+  font-size: 18px;
+  font-weight: 600;
+}
+.service-item .description{
+  color: #0b0b0b;
+  font-size: 18px;
+  font-weight: 400;
+}
+  

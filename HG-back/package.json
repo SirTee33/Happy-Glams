@@ -1,0 +1,12 @@
+{
+  "name": "happy-glams-api",
+  "version": "1.0.0",
+  "description": "API for Happy-Glams Beauty Makeup Products",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

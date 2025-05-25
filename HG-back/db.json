@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Lipstick Glow",
+      "image": "https://example.com/lipstick.jpg",
+      "old_price": 5000,
+      "new_price": 3500,
+      "category": "Lipstick"
+    },
+    {
+      "id": "2",
+      "name": "Blush Brush",
+      "image": "https://example.com/brush.jpg",
+      "old_price": 4000,
+      "new_price": 3000,
+      "category": "Brush"
+    }
+  ],
+  "cart": [
+    {   }
+  ]
+}

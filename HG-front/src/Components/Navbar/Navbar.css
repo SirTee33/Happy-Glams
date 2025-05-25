@@ -1,0 +1,277 @@
+.navbar{
+  display: flex;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+  justify-content: space-around;
+  gap: 20px;
+}
+.h2-h1{
+  display: flex;
+  text-align: center;
+}
+.h2-h1 h1{
+  border: 1px solid lightgray;
+  background-color: rgb(221, 189, 194);
+  color: rgb(243, 7, 47);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.h2-h1 h2{
+  margin-top: 20px;
+  margin-left: 5px;
+
+}
+.nav-menu{
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  display: flex;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: oblique;
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.nav-menu li:hover{
+  color: #e91e63;
+}
+.nav-menu hr{
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: rgb(243, 7, 47);
+}
+.nav-login-cart{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-login-cart button{
+  width: 80px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+  color: hsl(0, 0%, 32%);
+  font-size: 16px;
+  font-weight: 300;
+  background: white;
+  cursor: pointer;
+}
+.nav-login-cart button:active{
+  background: hsl(0, 0%, 92%);
+}
+.nav-cart-count{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  background: hsl(0, 100%, 50%);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-login-cart {
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .nav-cart-count {
+    margin-top: -30px;
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-login-cart {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-cart-count {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    margin: 0;
+  }
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    display: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-login-cart {
+    display: none;
+  }
+}
+/* Hide floating buttons on desktop */
+.mobile-float-buttons {
+  display: none;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+  .mobile-float-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+  }
+
+  .float-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .cart-float img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .login-float {
+    background-color: #007bff;
+  }
+
+  /* Optional: Hide original login/cart on mobile */
+  .nav-login-cart {
+    display: none;
+  }
+}
+@keyframes floatIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.mobile-float-buttons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-float-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+    animation: floatIn 0.5s ease forwards;
+  }
+
+  .float-btn {
+    background: linear-gradient(135deg, #f472b6, #ec4899);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .float-btn:hover {
+    transform: scale(1.05);
+  }
+
+  .login-float {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  }
+
+  .nav-login-cart {
+    display: none;
+  }
+}

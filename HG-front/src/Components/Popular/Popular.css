@@ -1,0 +1,43 @@
+.popular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+.popular h1{
+  color: #171717;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+  align-items: center;
+}
+.popular hr{
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #252525;
+  margin: 10px 0;
+}
+.popular-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .popular-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular-list {
+    grid-template-columns: 1fr;
+  }
+}
+

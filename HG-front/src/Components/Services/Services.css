@@ -1,0 +1,47 @@
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .services-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}
+.services h2{
+  color: #171717;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.services img{
+  margin-top: 15px;
+  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  
+}
+.services hr{
+  width: 200px;
+  height: 1px;
+  border-radius: 10px;
+  background-color: #252525;
+  
+}
+

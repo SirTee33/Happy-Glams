@@ -1,0 +1,129 @@
+.footer{
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 12px;
+}
+.footer-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between text and icons */
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+/* Stack paragraph and icons on small screens */
+@media (max-width: 600px) {
+  .footer-social-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.footer-icon-row p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-h2-h1{
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-h2-h1 h1{
+  border: 1px solid lightgray;
+  background-color: rgb(221, 189, 194);
+  color: rgb(243, 7, 47);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.footer-h2-h1 h2{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.footer-links{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  color: hsl(0, 3%, 30%);
+  font-size: 18px;
+  
+}
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+.footer-links li{
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.footer-links li:hover{
+  color: #e91e63;
+}
+.footer-social-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+.social-icon {
+  width: 28px;
+  height: 28px;
+  gap: 20px;
+  margin: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.social-icon img:hover{
+  transform: scale(1.1);
+}
+.footer-icons-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px;
+  padding-bottom: 6px;
+  background: #fbfbfb;
+  
+}
+/* Responsive stack and center on mobile */
+@media (max-width: 600px) {
+  .social-icon {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-icons-container {
+    justify-content: center;
+    gap: 4px;
+    
+    
+  }
+}
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+.footer-copyright hr{
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background: #c7c7c7;
+}

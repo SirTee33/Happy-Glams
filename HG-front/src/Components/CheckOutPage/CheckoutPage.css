@@ -1,0 +1,28 @@
+.checkout-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.checkout-page input {
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout-page button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #da3b8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-summary {
+  margin-top: 20px;
+}

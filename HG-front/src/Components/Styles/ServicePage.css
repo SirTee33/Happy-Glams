@@ -1,0 +1,125 @@
+.service-page{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 20px 100px;
+  padding-bottom: 100px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+.service-desc{
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 300;
+  color: hsl(0, 3%, 28%);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 900px;
+  line-height: 1.5;
+  justify-content: center;
+  text-align: center;
+}
+.services-types{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.services-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+  width: 100%;
+}
+
+@keyframes move {
+  20%{
+     transform: translateY(-50px);
+  }
+  40%{
+    transform: translateY(-100px);
+  }
+  60%{
+    transform: translateY(-150px);
+  }
+  80%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(-250px);
+  }
+  120%{transform: translateY(-300px);
+  }
+}
+.services-offer{
+  line-height: 50px;
+  white-space: nowrap;  
+  /* overflow: hidden;    */
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  padding: 0 10px; 
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #da3b8a;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .services-offer {
+    font-size: 18px; /* Adjust font for smaller screens */
+  }
+}
+.services-page-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .services-page-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-page-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-page h1{
+  color: #171717;
+  font-size: 40px;
+  font-weight: 600;
+}
+.service-page h3{
+  color: #171717;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.service-page img{
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  max-width: 220px;
+  
+}
+.service-page hr{
+  width: 200px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #252525;
+}
