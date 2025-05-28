@@ -24,15 +24,16 @@
 .nav-menu{
   align-items: center;
   list-style: none;
-  gap: 50px;
+  gap: 35px;
   display: flex;
   color: #626262;
   font-size: 20px;
   font-weight: 500;
-  font-style: oblique;
+  /* font-style: oblique; */
 }
 .nav-menu li {
   display: flex;
+  text-align: justify;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -55,29 +56,32 @@
 .nav-login-cart{
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 25px;
 }
 .nav-login-cart button{
-  width: 80px;
-  height: 40px;
+  width: 70px;
+  height: 32px;
   outline: none;
-  border: 1px solid #7a7a7a;
+  border: none;
   border-radius: 30px;
-  color: hsl(0, 0%, 32%);
+  color: white;
   font-size: 16px;
-  font-weight: 300;
-  background: white;
+  font-weight: 600;
+  background: hsl(340, 82%, 52%);
   cursor: pointer;
 }
 .nav-login-cart button:active{
-  background: hsl(0, 0%, 92%);
+  background: hsl(340, 82%, 22%);
+}
+.cart-icon-wrapper img {
+  width: 40px;
 }
 .nav-cart-count{
   position: absolute;
   top: -8px;
   right: -8px;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,15 +157,16 @@
 @media (max-width: 768px) {
   .nav-menu {
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 20px;
+    left: 5px;
     background-color: white;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     padding: 15px;
     display: none;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
     z-index: 10;
+    
   }
 
   .nav-menu.open {
@@ -185,28 +190,13 @@
 @media (max-width: 768px) {
   .mobile-float-buttons {
     position: fixed;
-    bottom: 20px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
     z-index: 1000;
   }
-
-  .float-btn {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-  }
-
   .cart-float img {
     width: 20px;
     height: 20px;
@@ -254,7 +244,7 @@
     padding: 10px 14px;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;

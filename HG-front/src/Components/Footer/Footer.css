@@ -11,7 +11,7 @@
 .footer-icon-row {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between text and icons */
+  gap: 15px; 
   flex-wrap: wrap; /* makes it responsive on smaller screens */
 }
 /* Stack paragraph and icons on small screens */
@@ -59,8 +59,6 @@
     text-align: center;
   }
 }
-
-
 .footer-links li{
   cursor: pointer;
   transition: color 0.3s;

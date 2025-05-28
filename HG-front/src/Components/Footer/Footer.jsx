@@ -18,7 +18,7 @@ function Footer() {
             <a href="https://www.instagram.com/happy_glam1" target="_blank" rel="noopener  noreferrer">
               <img src={instagramIcon} alt="Instagram" className="social-icon" />
             </a>
-            <a href="https://www.tiktok.com/@happy-glam2" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@makeup_artist_insangoota" target="_blank" rel="noopener noreferrer">
               <img src={tiktokIcon} alt="Tiktok" className="social-icon" />
             </a>
             <a href="https://wa.me/2347033992717" target="_blank" rel="noopener noreferrer">

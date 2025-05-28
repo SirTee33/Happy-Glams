@@ -26,15 +26,15 @@ function Navbar() {
         <span className="bar"></span>
       </div>
       <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
-        <li onClick={()=>{setMenu("home")}}><Link style={{textDecoration: "none"}} to="/">Home</Link>{menu==="home"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("home"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/">Home</Link>{menu==="home"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("services")}}><Link style={{textDecoration: "none"}} to="/services">Services</Link>{menu==="services"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("services"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/services">Services</Link>{menu==="services"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("gallery")}}><Link style={{textDecoration: "none"}} to="/gallery">Gallery</Link>{menu==="gallery"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("gallery"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/gallery">Gallery</Link>{menu==="gallery"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("products")}}><Link style={{textDecoration: "none"}} to="/products">Products</Link>{menu==="products"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("products"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/products">Products</Link>{menu==="products"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("contact")}}><Link style={{textDecoration: "none"}} to="/contact">Contact</Link>{menu==="contact"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("contact"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/contact">Contact</Link>{menu==="contact"?<hr/>:<></>}
         </li>
       </ul>
         <div className="nav-login-cart">
@@ -68,7 +68,6 @@ function Navbar() {
             </Link>
           )}
         </div>
-
     </div>
   )
 }

@@ -20,7 +20,7 @@
 }
 
 .login-input {
-  padding: 12px;
+  padding: 14px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -38,7 +38,6 @@
   font-size: 16px;
   font-weight: bold;
 }
-
 .login-button:hover {
   background-color: hsl(0, 100%, 53%);
 }
@@ -58,4 +57,18 @@
 
 .login-link:hover {
   text-decoration: underline;
+}
+@media (max-width: 480px) {
+  .login-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.6rem;
+  }
+
+  .login-button {
+    font-size: 0.95rem;
+  }
 }

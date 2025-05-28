@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 .l-signup-fields input{
-  padding: 20px;
+  padding: 14px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -30,14 +30,14 @@
 }
 .l-signup-container button{
   width: 480px;
-  height: 72px;
+  height: 52px;
   background: hsl(0, 100%, 63%);
   color: #fff;
   margin-top: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
 }
 .l-signup-container button:hover{

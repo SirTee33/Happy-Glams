@@ -15,11 +15,11 @@ const CartPage = () => {
 
     // Example shipping rates based on location
     if (selectedLocation === "Lagos") {
-      setShippingFee(2000);
+      setShippingFee(1200);
     } else if (selectedLocation === "Abuja") {
-      setShippingFee(3000);
-    } else {
       setShippingFee(5000);
+    } else {
+      setShippingFee(3000);
     }
   };
 

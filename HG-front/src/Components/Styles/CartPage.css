@@ -20,8 +20,14 @@
 }
 .cart-page input:focus,
 .cart-page select:focus {
-  border-color: #007bff;
+  border-color: lightgray;
   outline: none;
+}
+@media (max-width: 500px) {
+    .cart-page select {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 .empty-cart{
   margin-top: 10px;
