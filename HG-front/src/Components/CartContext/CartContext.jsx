@@ -5,6 +5,8 @@ const API_URL = 'https://happy-glams-backend.onrender.com/cart';
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  
+
 
   // Fetch cart from API on initial render
   useEffect(() => {
@@ -86,6 +88,14 @@ export const CartProvider = ({ children }) => {
   const getTotalPrice = () =>
     cart.reduce((total, item) => total + item.new_price * item.quantity, 0);
 
+  const clearCart = async () => {
+    const deleteRequests = cart.map(item => fetch(`${API_URL}/${item.id}`,
+      { method: 'DELETE' })
+    );
+    await Promise.all(deleteRequests);
+    setCart([]);
+  };
+
   return (
     <CartContext.Provider value={{
       cart,
@@ -93,7 +103,8 @@ export const CartProvider = ({ children }) => {
       removeFromCart,
       updateQuantity,
       getTotalItems,
-      getTotalPrice
+      getTotalPrice,
+      clearCart
     }}>
       {children}
     </CartContext.Provider>

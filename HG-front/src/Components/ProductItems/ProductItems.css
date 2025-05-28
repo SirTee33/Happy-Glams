@@ -14,7 +14,16 @@
   padding: 15px;
   background-color: #fff;
 }
-
+@media (max-width: 768px) {
+  .p-item {
+    height: 30vh;
+  }
+}
+@media (max-width: 480px) {
+  .p-item {
+    height: 38vh;
+  }
+}
 .p-item p{
   font-size: 16px;
   font-weight: 500;

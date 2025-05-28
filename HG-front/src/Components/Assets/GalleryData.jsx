@@ -5,7 +5,7 @@ import t4 from "../Videos & Images/before &after1.mp4.mp4"
 import t5 from "../Videos & Images/before & after 2.mp4.mp4"
 import t6 from "../Videos & Images/before & after3.mp4.mp4"
 import t7 from "../Videos & Images/testi3.jpg"
-import t8 from "../Videos & Images/valery.jpg"
+import t8 from "../Videos & Images/tope wed2.jpg"
 import t9 from "../Videos & Images/birthday shoot.jpeg"
 import t10 from "../Videos & Images/B&A4.jpeg"
 import t11 from "../Videos & Images/Bridal2.mp4"
@@ -18,6 +18,10 @@ import t17 from "../Videos & Images/Bridal3.mp4"
 import t18 from "../Videos & Images/Party3.mp4"
 import t19 from "../Videos & Images/Photoshootlady.png"
 import t20 from "../Videos & Images/registry.mp4.mp4"
+import t21 from "../Videos & Images/bride n2.jpg"
+import t22 from "../Videos & Images/white bride.jpg"
+import t23 from "../Videos & Images/party madam.jpg"
+import t24 from "../Videos & Images/IMG-20250527-WA0038.jpg"
 
 const GalleryData = [
   {
@@ -71,7 +75,7 @@ const GalleryData = [
   {
     id: 8,
     type: 'image',
-    category: 'photoshoot',
+    category: 'bridal',
     media: t8,
   },
   {
@@ -129,6 +133,18 @@ const GalleryData = [
     media: t18,
   },
   {
+    id: 22,
+    type: 'image',
+    category: 'bridal',
+    media: t22,
+  },
+  {
+    id: 21,
+    type: 'image',
+    category: 'bridal',
+    media: t21,
+  },
+  {
     id: 19,
     type: 'image',
     category: 'photoshoot',
@@ -139,6 +155,18 @@ const GalleryData = [
     type: 'video',
     category: 'bridal',
     media: t20,
+  },
+  {
+    id: 23,
+    type: 'image',
+    category: 'party',
+    media: t23,
+  },
+  {
+    id: 24,
+    type: 'image',
+    category: 'bridal',
+    media: t24,
   },
   
 ];

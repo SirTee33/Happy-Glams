@@ -8,7 +8,7 @@ import s7 from "../Videos & Images/gele.jpeg"
 import s8 from "../Videos & Images/birthday shoot.jpeg"
 import s9 from "../Videos & Images/gele2.jpeg"
 import s10 from "../Videos & Images/gele1.jpeg"
-import s11 from "../Videos & Images/gele4.jpeg"
+import s11 from "../Videos & Images/bride n.jpg"
 import s12 from "../Videos & Images/birthday.jpeg"
 
 const servicePage = [
@@ -23,12 +23,12 @@ const servicePage = [
     description: "Perfect for parties, weddings, and red-carpet moments",
   },
   { id: 3, 
-    title: "Birthday Glam",
+    title: "Birthday Shoot",
     image: s3, 
     description: "Bold and glamorous for special event",
   },
   { id: 4, 
-    title: "Glam Pre-wedding Shoot",
+    title: "Pre-wedding Shoot",
     image: s4, 
     description: "Bold and glamorous for special event",
   },
@@ -38,7 +38,7 @@ const servicePage = [
     description: "Perfect for parties, weddings, and red-carpet moments",
   },
   { id: 6, 
-    title: "Birthday Glam ",
+    title: "Birthday Shoot ",
     image: s6, 
     description: "Looking so beautiful",
   },

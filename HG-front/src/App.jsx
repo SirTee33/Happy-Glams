@@ -1,4 +1,6 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import ServicesPage from "./Pages/ServicesPage";
@@ -41,6 +43,7 @@ function App() {
             <Route path="/cart" element={<PrivateRoute><CartPage/></PrivateRoute>}/>
             <Route path="/checkout" element={<PrivateRoute><CheckoutPage /></PrivateRoute>} />
           </Routes>
+          <ToastContainer position="top-right" autoClose={3000} />
           <Footer />
           </BrowserRouter>
         </CartProvider>

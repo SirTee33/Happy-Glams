@@ -57,17 +57,19 @@
 }
 .p-dis-right button{
   padding: 20px 40px;
-  width: 190px;
+  width: 175px;
   font-size: 16px;
   font-weight: 600;
   color: white;
   background: hsl(0, 100%, 63%);
   margin-bottom: 40px;
   margin-top: 10px;
+  border-radius: 15px;
   border: none;
   outline: none;
   cursor: pointer;
 }
+
 .p-dis-right button:hover{
   background: hsl(0, 100%, 43%);
 }
@@ -79,19 +81,22 @@
 }
 .back-button{
   padding: 20px 15px 15px 30px;
-  width: 160px;
+  width: 130px;
   font-size: 18px;
   font-weight: 600;
   border: none;
-  border-radius: 70px;
+  border-radius: 15px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
   color: #da3b8a;
   margin-top: 30px;
-  background: #e2e2e2;
+  background: hsl(0, 0%, 89%);
 }
-
+.back-button:hover{
+  background-color: hsl(0, 0%, 59%);
+  color: red;
+}
 @media (max-width: 768px) {
   .p-dis {
     flex-direction: column;
@@ -144,11 +149,11 @@
   }
 
   .p-dis-right button {
-    width: 80%;
+    width: 50%;
   }
 
   .back-button {
-    width: 80%;
+    width: 40%;
     text-align: center;
   }
 }

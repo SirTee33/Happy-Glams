@@ -1,10 +1,29 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { CartContext } from '../Components/CartContext/CartContext';
 import { Link } from 'react-router-dom';
 import '../Components/Styles/CartPage.css';
 import RemoveIcon from "../Components/Videos & Images/removeicon.png"
 const CartPage = () => {
   const { cart, removeFromCart, updateQuantity, getTotalPrice } = useContext(CartContext);
+  const [location, setLocation] = useState('');
+  const [shippingFee, setShippingFee] = useState(0);
+
+  // Add location handler
+  const handleLocationChange = (e) => {
+    const selectedLocation = e.target.value;
+    setLocation(selectedLocation);
+
+    // Example shipping rates based on location
+    if (selectedLocation === "Lagos") {
+      setShippingFee(2000);
+    } else if (selectedLocation === "Abuja") {
+      setShippingFee(3000);
+    } else {
+      setShippingFee(5000);
+    }
+  };
+
+
 
   // Handle quantity change
   const handleQuantityChange = (id, quantity) => {
@@ -48,7 +67,15 @@ const CartPage = () => {
           </div>
         ))}
         </div>
+        
       )}
+      <select value={location} onChange={handleLocationChange} required>
+        <option value="">Select Location</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Abuja">Abuja</option>
+        <option value="Others">Others</option>
+      </select>
+
       <div className="cartitems-down">
         <div className="cartitems-total">
           <h1>Cart Total</h1>
@@ -59,13 +86,13 @@ const CartPage = () => {
             </div>
             <hr />
             <div className="cartitems-total-item">
-              <p>Shipping Fee</p>
-              <p>Free</p>
+              <p>Shipping ({location})</p>
+              <p>₦{shippingFee.toLocaleString()}</p>
             </div>
             <hr />
             <div className="cartitems-total-item">
               <h3>Total</h3>
-              <h3>₦{getTotalPrice().toLocaleString()}</h3>
+              <h3>₦{(getTotalPrice() + + shippingFee).toLocaleString()}</h3>
             </div>
           </div>
           <div className="checkout-add">
@@ -73,13 +100,13 @@ const CartPage = () => {
             <Link to="/products" className="add-cart-button">Add to Cart</Link>
           </div>
         </div>
-          <div className="cartitems-promocode">
+          {/* <div className="cartitems-promocode">
           <p>Got a Promo Code? Use it Here!</p>
           <div className="cartitems-promobox">
             <input type="text" placeholder="promo code"/>
             <button>Submit</button>
           </div>
-        </div>
+        </div> */}
       </div>
       
     </div>

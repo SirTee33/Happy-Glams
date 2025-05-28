@@ -5,7 +5,7 @@ import ProductItems from "../Components/ProductItems/ProductItems";
 import offer from "../Components/Videos & Images/Mine1.png";
 //import DropIcon from "../Components/Videos & Images/drop-down-25.png";
 
-const categories = ["All", "Brush", "Lipstick", "Foundation", "Eyelashes", "Palette", "Cleanser"];
+const categories = ["All", "Brush", "Lipstick", "Foundation", "Eyelashes", "Palette", "Cleanser", "Moisturizer"];
 
 const Product = () => {
   const [visibleCount, setVisibleCount] = useState(8);

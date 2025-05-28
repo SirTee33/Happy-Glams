@@ -8,6 +8,21 @@
   background: #e2e2e2;
   border: 0;
 }
+
+.cart-page input,
+.cart-page select {
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+.cart-page input:focus,
+.cart-page select:focus {
+  border-color: #007bff;
+  outline: none;
+}
 .empty-cart{
   margin-top: 10px;
   font-size: 16px;
