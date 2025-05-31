@@ -18,7 +18,7 @@ const ServicesPage = () => {
           <div className="services-offer">▶ BRIDAL HAIR STYLING</div>
           <div className="services-offer">▶ GELE TYING</div>
           <div className="services-offer">▶ SALES OF MAKEUP PRODUCTS</div>
-          <div className="services-offer">▶ WALK-IN STUDIO & HOME SERVICE</div>
+          <div className="services-offer">▶ STUDIO & HOME SERVICE</div>
           <div className="services-offer">▶ MAKEUP TRAINING</div>
         </div>
       </div>

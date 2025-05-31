@@ -24,10 +24,9 @@
     grid-template-columns: 1fr;
   }
 }
-.services h2{
-  color: #171717;
+.services h1{
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .services img{

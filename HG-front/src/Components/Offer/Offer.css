@@ -1,14 +1,14 @@
 .offer{
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   height: auto;
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding: 40px 20px;
-  gap: 20px;
+  padding: 0 20px;
+  gap: 15px;
   margin-top: 15px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
 }
@@ -18,33 +18,32 @@
   flex-direction: column; 
   justify-content: center;
   min-width: 280px;
-  gap: 10px;
+  gap: 4px;
 }
 .offer-left h1{
-  color: #171717;
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 600;
 }
 .offer-left h4{
   color:hsl(0, 3%, 30%);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 500;
 }
 .offer-left p{
   color:hsl(0, 3%, 30%);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 .book-now-btn{
-  width: 110px;
-  padding: 10px 20px;
+  width: 100px;
+  padding: 10px 10px;
   text-align: center;
-  height: 30px;
+  height: 28px;
   border-radius: 30px;
   background: hsl(0, 100%, 63%);
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
   cursor: pointer;
@@ -62,7 +61,7 @@
 }
 .offer-right img{
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   object-fit: contain; 
 }
@@ -72,11 +71,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
 
   .offer-left h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .offer-left p {
@@ -84,10 +83,10 @@
   }
 
   .offer-left button {
-    margin: 20px auto 0;
+    margin: 10px auto 0;
   }
 
   .offer-right img {
-    max-width: 250px;
+    max-width: 200px;
   }
 }

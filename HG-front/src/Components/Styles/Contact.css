@@ -1,6 +1,6 @@
 .c{
   position: relative;
-  height: 120vh;
+  height: 125vh;
   
 }
 .c-bg{
@@ -9,9 +9,12 @@
   position: absolute;
 }
 .c-wrapper{
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
+}
+.to-glow {
+  font-size: 18px;
 }
 @media (max-width: 768px) {
   .c-wrapper {
@@ -21,19 +24,22 @@
 
   .c-info-item {
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .c-title {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .c-left h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .c-desc {
     font-size: 18px;
+  }
+  .to-glow {
+    font-size: 16px;
   }
 }.c-left{
   flex: 1;
@@ -43,32 +49,34 @@
 }
 .c-left h2{
   color: hsl(0, 3%, 30%);
-  font-size: 33px;
+  font-size: 28px;
   text-align: center;
 }
-.c-title{
-  font-size: 40px;
+.c-title {
   width: 100%;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .c-info-item{
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  margin: 50px 0px;
+  margin: 15px;
   font-weight: 300;
   width: 100%;
   font-size: 18px;
   max-width: 450px;
 }
 .c img{
-  width: 35px;
-  height: 35px;
-  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 .c-right{
   flex: 1;
 }
 .c-desc{
-  font-size: 25px;
+  font-size: 18px;
 }
 .booking-section{
   background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);

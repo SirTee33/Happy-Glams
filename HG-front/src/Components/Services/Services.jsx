@@ -5,7 +5,7 @@ import ServiceItem from '../ServiceItems/ServiceItem';
 const Services = () => {
   return (
     <div className="services">
-      <h2>Our Makeup Services</h2>
+      <h1>Our Makeup Services</h1>
       <hr />
       <div className="services-list">
         {serviceData.map((service,i) => {

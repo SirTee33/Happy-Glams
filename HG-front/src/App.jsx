@@ -15,7 +15,7 @@ import CartPage from "./Pages/CartPage"
 import LoginSignup from "./Pages/LoginSignup";
 import Gallery from "./Pages/Gallery";
 import ScrollToTop from "./Components/ScrollTop/ScrollTop";
-import PrivateRoute from "./PrivateRoute";
+//import PrivateRoute from "./PrivateRoute";
 import { AuthProvider } from "./AuthContext";
 
 function App() {
@@ -30,18 +30,18 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
 
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signup" element={<LoginSignup/>}/>
+            <Route path="/login" element={<LoginPage />}/>
+            <Route path="/signup" element={<LoginSignup />}/>
 
-            <Route path="/gallery" element={<PrivateRoute><Gallery/></PrivateRoute>}/>
-            <Route path="/services" element={<PrivateRoute><ServicesPage/></PrivateRoute>}/>
-            <Route path="/products" element={<PrivateRoute><Product/></PrivateRoute>}>
-              <Route path=":productId" element={<PrivateRoute><Product/></PrivateRoute>}/>
+            <Route path="/gallery" element={<Gallery />}/>
+            <Route path="/services" element={<ServicesPage />}/>
+            <Route path="/products" element={<Product />}>
+              <Route path=":productId" element={<Product />}/>
             </Route>
-            <Route path="/contact" element={<PrivateRoute><Contact/></PrivateRoute>}/>
-            <Route path="/product/:id" element={<PrivateRoute><ProductDisplay/></PrivateRoute>}/>
-            <Route path="/cart" element={<PrivateRoute><CartPage/></PrivateRoute>}/>
-            <Route path="/checkout" element={<PrivateRoute><CheckoutPage /></PrivateRoute>} />
+            <Route path="/contact" element={<Contact />}/>
+            <Route path="/product/:id" element={<ProductDisplay />}/>
+            <Route path="/cart" element={<CartPage />}/>
+            <Route path="/checkout" element={<CheckoutPage />} />
           </Routes>
           <ToastContainer position="top-right" autoClose={3000} />
           <Footer />

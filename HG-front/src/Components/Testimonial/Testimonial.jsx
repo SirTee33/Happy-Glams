@@ -6,7 +6,7 @@ const Testimonial = () => {
   
   return (
     <div className="testimonial">
-        <h2>What Our Clients Says</h2>
+        <h1>What Our Clients Says</h1>
         <hr />
         <div className="testimonial-list">
         {testimonial.map((review,i) => {

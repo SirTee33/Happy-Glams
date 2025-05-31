@@ -4,7 +4,6 @@ const Testimonial_item = (props) => {
   return (
     <div className="testimonial-item">
       <img src={props.image} alt="" />
-      <p className='name'>{props.name}</p>
       <p className='view'>{props.view}😀</p>
     </div>
   );

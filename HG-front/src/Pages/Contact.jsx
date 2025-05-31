@@ -41,7 +41,7 @@ const Contact = () => {
       <div className="c-bg">
       <div className="c-wrapper">
         <div className="c-left">
-          <h2 className='c-title'>Contact Us for your Appointment & Inquiries</h2>
+          <h3 className='c-title'>Contact Us for your Appointment & Inquiries</h3>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" /> +2347033992717, +2348024746657
@@ -59,7 +59,7 @@ const Contact = () => {
             <b>How can we serve you the best?</b> Get in touch. We will surely put a smile on your face.
           </p>
         <section className='booking-section'> 
-        <h2>Ready to Glow? Book Now</h2>
+        <h2 className='to-glow'>Ready to Glow? Book Now</h2>
         <form  className="booking-form" ref={form} onSubmit={sendEmail}>
           <input type='text' name="user_name" placeholder='Your Name' required/>
           <input type='text' name="user_email" placeholder='Your Email' required/>
