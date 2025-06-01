@@ -16,7 +16,8 @@
 }
 @media (max-width: 768px) {
   .p-item {
-    height: 30vh;
+    height: 26vh;
+     
   }
 }
 @media (max-width: 480px) {

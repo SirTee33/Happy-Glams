@@ -1,7 +1,7 @@
-import s1 from "../Videos & Images/wedding2.jpeg"
-import s2 from "../Videos & Images/birthday.jpeg"
+import s1 from "../Videos & Images/weddinglady2.png"
+import s2 from "../Videos & Images/party madam 2.jpg"
 import s3 from "../Videos & Images/momgele.jpg"
-import s4 from "../Videos & Images/home.jpeg"
+import s4 from "../Videos & Images/lady new.jpg"
 
 const services = [
   { id: 1, 

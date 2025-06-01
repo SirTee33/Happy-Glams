@@ -33,11 +33,23 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
+  .popular h1{
+    font-size: 25px;
+  }
+  .popular hr{
+    width: 160px;
+  }
 }
 
 @media (max-width: 600px) {
   .popular-list {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .popular h1{
+    font-size: 20px;
+  }
+  .popular hr{
+    width: 130px;
   }
 }
-

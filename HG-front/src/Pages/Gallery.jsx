@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../Components/Styles/Gallery.css"
 import GalleryData from '../Components/Assets/GalleryData';
-//import GalleryItems from '../Components/GalleryItems/GalleryItems';
+
 const Gallery = () => {
   const [filter, setFilter] = useState('all');
   const [lightboxItem, setLightboxItem] = useState(null);
@@ -19,10 +19,10 @@ const Gallery = () => {
       <h1>Glam in Action</h1>
       <h4>From Natural to Glam-See the Magic</h4>
       <div className="gallery-filters">
-        <button onClick={() => setFilter('all')}>All</button>
         <button onClick={() => setFilter('bridal')}>Bridal</button>
         <button onClick={() => setFilter('photoshoot')}>Photoshoot</button>
         <button onClick={() => setFilter('party')}>Party</button>
+        <button onClick={() => setFilter('all')}>All</button>
       </div>
 
       <div className="gallery-grid">

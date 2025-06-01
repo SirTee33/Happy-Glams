@@ -1,7 +1,7 @@
 import s1 from "../Videos & Images/weddinglady2.png"
 import s2 from "../Videos & Images/partylady.png"
 import s3 from "../Videos & Images/Photoshootlady.png"
-import s4 from "../Videos & Images/wedding.jpeg"
+import s4 from "../Videos & Images/weddinglady3.png"
 import s5 from "../Videos & Images/gele3.jpeg"
 import s6 from "../Videos & Images/birthday shoot3.jpeg"
 import s7 from "../Videos & Images/gele.jpeg"
@@ -9,7 +9,7 @@ import s8 from "../Videos & Images/birthday shoot.jpeg"
 import s9 from "../Videos & Images/gele2.jpeg"
 import s10 from "../Videos & Images/gele1.jpeg"
 import s11 from "../Videos & Images/bride n.jpg"
-import s12 from "../Videos & Images/birthday.jpeg"
+import s12 from "../Videos & Images/mama.jpg"
 
 const servicePage = [
   { id: 1, 

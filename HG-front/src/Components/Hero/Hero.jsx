@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Hero.css";
-import Mine from "../Videos & Images/Bridebeauty2.png"
+import Mine from "../Videos & Images/tope background.png"
 
 const Hero = () => {
   return (

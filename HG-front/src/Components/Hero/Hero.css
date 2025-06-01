@@ -129,7 +129,13 @@
   }
 
   .hero-right img {
-    max-width: 80%;
+    max-width: 40%;
   }
 }
-
+@media (max-width: 600px) {
+  .hero-right img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+}
