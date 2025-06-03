@@ -14,7 +14,7 @@ const reviews = [
   },
   { id: 3, 
     image: t3,
-    view: "Happy_Glams made me look beautiful on my wedding day!.",
+    view: "Happy Glams made me look beautiful on my wedding day!.",
   },
   { id: 4, 
     image: t4,
