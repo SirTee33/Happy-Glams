@@ -14,12 +14,12 @@ const CartPage = () => {
     setLocation(selectedLocation);
 
     // Example shipping rates based on location
-    if (selectedLocation === "Lagos") {
-      setShippingFee(1200);
-    } else if (selectedLocation === "Abuja") {
-      setShippingFee(5000);
+    if (selectedLocation === "Ogun") {
+      setShippingFee(1000);
+    } else if (selectedLocation === "Lagos") {
+      setShippingFee(1500);
     } else {
-      setShippingFee(3000);
+      setShippingFee(2500);
     }
   };
 
@@ -71,8 +71,8 @@ const CartPage = () => {
       )}
       <select value={location} onChange={handleLocationChange} required>
         <option value="">Select Location</option>
+        <option value="Ogun">Ogun</option>
         <option value="Lagos">Lagos</option>
-        <option value="Abuja">Abuja</option>
         <option value="Others">Others</option>
       </select>
 
