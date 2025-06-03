@@ -103,7 +103,7 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
   }
 
@@ -113,6 +113,7 @@
 
   .hero h1, .hero h2 {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   .glams {
