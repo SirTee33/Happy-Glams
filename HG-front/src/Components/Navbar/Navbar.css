@@ -75,12 +75,12 @@
     position: fixed;
     top: 80px;
     right: 5px;
-    width: 20%;
+    width: 30%;
     justify-content: center;
     background-color: white;
     flex-direction: column;
     gap: 30px;
-    padding: 35px;
+    padding: 40px;
     display: none;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
     transition: right 0.3s ease-in-out;
