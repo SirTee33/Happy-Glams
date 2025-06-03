@@ -125,8 +125,8 @@
     z-index: 1000;
   }
   .cart-float img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 
   
@@ -160,10 +160,10 @@
   .float-btn {
     background: linear-gradient(135deg, #f472b6, #ec4899);
     color: #fff;
-    padding: 10px 14px;
+    padding: 8px 8px;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;

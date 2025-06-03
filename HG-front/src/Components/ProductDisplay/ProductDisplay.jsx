@@ -53,7 +53,6 @@ return (
           <img src={product.image} alt="" />  
           <img src={product.image} alt="" />  
           <img src={product.image} alt="" />  
-          <img src={product.image} alt="" />  
         </div>
         <div className="p-dis-img">
           <img className='p-dis-main-img' src={product.image} alt="" />
@@ -76,8 +75,6 @@ return (
           A very good product meant for your lovely skill to nourish your skin and beautify your entire body. 
         </div>
         <button onClick={() => addToCart(product)}>Add to Cart</button>
-        <p className='p-dis-right-categ'><span>Category :</span>Brush, LipStick, Crop Top</p>
-        <p className='p-dis-right-categ'><span>Category :</span>Modern, Latest</p>
         <Link to="/products" button className='back-button'>⬅ Products</Link> 
       </div>
     </div>

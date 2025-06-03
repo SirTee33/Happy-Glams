@@ -13,11 +13,11 @@
   gap: 16px;
 }
 .p-dis-img-list img{
-  height: 140px;
+  height: 96px;
 }
 .p-dis-main-img{
-  width: 360px;
-  height: 605px;
+  width: 300px;
+  height: 320px;
 }
 .p-dis-right{
   margin: 0px 70px;
@@ -26,8 +26,8 @@
 }
 .p-dis-right h1{
   color: #3d3d3d;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
 }
 .p-dis-right-stars{
   display: flex;
@@ -38,33 +38,33 @@
   font-size: 16px;
 }
 .p-dis-right-stars img{
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 .p-dis-right-prices{
   display: flex;
   margin: 30px 0px;
   gap: 30px;
-  font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .p-dis-right-price-old{
+  font-size: 20px;
   color: #818181;
   text-decoration: line-through;
 }
-.p-dis-right-price-new{
-  color: #ff4141;
+.p-dis-right-new{
+  font-size: 20px;
 }
 .p-dis-right button{
   padding: 20px 40px;
-  width: 175px;
+  width: 168px;
   font-size: 16px;
   font-weight: 600;
   color: white;
   background: hsl(0, 100%, 63%);
-  margin-bottom: 40px;
-  margin-top: 10px;
-  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -73,31 +73,25 @@
 .p-dis-right button:hover{
   background: hsl(0, 100%, 43%);
 }
-.p-dis-right-categ{
-  margin-top: 10px;
-}
-.p-dis-right-categ span{
-  font-weight: 600;
-}
 .back-button{
   padding: 20px 15px 15px 30px;
   width: 130px;
   font-size: 18px;
   font-weight: 600;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
   color: #da3b8a;
-  margin-top: 30px;
+  margin-bottom: 20px;
   background: hsl(0, 0%, 89%);
 }
 .back-button:hover{
   background-color: hsl(0, 0%, 59%);
   color: red;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .p-dis {
     flex-direction: column;
     margin: 20px;
@@ -111,18 +105,19 @@
 
   .p-dis-img-list {
     flex-direction: row;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .p-dis-img-list img {
-    height: 80px;
+    height: 60px;
     width: auto;
   }
 
   .p-dis-main-img {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
   }
 
@@ -134,26 +129,35 @@
   }
 
   .p-dis-right h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .p-dis-right-stars img {
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
   }
 
   .p-dis-right-prices {
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
+  }
+  .p-dis-right-price-old{
+    font-size: 18px;
+  }
+  .p-dis-right-new{
+    font-size: 18px;
+  }
+  .p-dis-right-desc {
+    font-size: 16px;
   }
 
   .p-dis-right button {
     width: 50%;
+    font-size: 16px;
   }
 
   .back-button {
     width: 40%;
-    text-align: center;
+    font-size: 16px;
   }
 }
