@@ -41,6 +41,9 @@
   height: 30px;
   width: 30px;
 }
+.p-dis-right-stars p {
+  font-size: 18px;
+}
 .p-dis-right-prices{
   display: flex;
   margin: 30px 0px;
@@ -136,7 +139,9 @@
     height: 22px;
     width: 22px;
   }
-
+  .p-dis-right-stars p {
+    font-size: 14px;
+  }
   .p-dis-right-prices {
     align-items: center;
     gap: 25px;
@@ -152,7 +157,7 @@
   }
 
   .p-dis-right button {
-    width: 50%;
+    width: 60%;
     font-size: 16px;
   }
 
