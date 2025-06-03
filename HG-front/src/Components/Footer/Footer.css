@@ -20,8 +20,11 @@
     align-items: flex-start;
     gap: 10px;
   }
+  .footer-copy {
+    font-size: 14px;
+  }
 }
-.footer-icon-row p {
+.footer-copy{
   margin: 0;
   font-size: 16px;
   font-weight: 500;
@@ -78,6 +81,10 @@
   .footer-icons-container {
     justify-content: center;
     gap: 4px;
+  }
+  .social-icon {
+    width: 18px;
+    height: 18px;
   }
 }
 .footer-copyright{

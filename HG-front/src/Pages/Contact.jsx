@@ -8,8 +8,21 @@ import Email from "../Components/Videos & Images/email icon1.png"
 import Address from "../Components/Videos & Images/address icon1.png"
 
 const Contact = () => {
-  const [contact, setContact] = useState([]);
+  const [_contact, setContact] = useState([]);
    const form = useRef();
+
+  const services = [
+    "Bridal Makeup",
+    "Bridal Hairstyling",
+    "Photoshoot Makeup",
+    "Party Glam",
+    "Gele Tying",
+    "Studio and Home Service",
+    "Sales of Makeup Products",
+    "Makeup Training",
+  ];
+  const uniqueServices = [...new
+    Set(services)];
 
   useEffect(() => {
     setContact(servicePageData);
@@ -66,11 +79,18 @@ const Contact = () => {
           <textarea className='text-area' rows="5" placeholder='Message' name="message"/>
           <select name="service" required>
             <option value="">Select Service</option>
-            {contact.map((service) => (
-            <option key={service.id} value={service.title}>{service.title}</option>
+            {uniqueServices.map((service, index) => (
+            <option key={index} value={service}>{service}</option>
             ))}
           </select>
-          <input type="date" name="preferred_date" required/>
+          <input 
+          type="text"
+          placeholder='mm / dd / yyyy'
+          onFocus={(e) => (e.target.type = "date")}
+            onBlur={(e) => {
+              if (!e.target.value) e.target.type = "text";
+            }}
+          name="preferred_date" required/>
           <button>Book Now</button>
         </form>
         </section>

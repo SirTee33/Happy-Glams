@@ -6,6 +6,7 @@ import { CartContext } from '../CartContext/CartContext';
 import cart_icon from "../Videos & Images/cartcount.png";
 import { Link } from "react-router-dom";
 //import { useAuth } from "../../AuthContext";
+import logo from '../Videos & Images/mine logo new 1.png'
 
 function Navbar() {
     const [menu, setMenu] = useState("home");
@@ -16,8 +17,9 @@ function Navbar() {
   return(
     <div className="navbar">
       <div className="h2-h1">
-        <h1>HG</h1>
-        <h2>Beauty</h2>
+        <img src={logo} alt="" />
+        {/* <h1>HG</h1>
+        <h2>Beauty</h2> */}
       </div>
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>

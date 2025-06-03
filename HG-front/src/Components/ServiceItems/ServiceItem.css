@@ -12,9 +12,9 @@
   font-size: 17px;
   font-weight: 400;
 }
-.service-item .title{
+.title{
   color: #374151;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 .service-item .description{
@@ -22,4 +22,8 @@
   font-size: 18px;
   font-weight: 400;
 }
-  
+@media (max-width: 600px) {
+  .title{
+    font-size: 14px;
+    }
+}     

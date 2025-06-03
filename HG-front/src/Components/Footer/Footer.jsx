@@ -8,10 +8,6 @@ import tiktokIcon from "../Videos & Images/tiktok icon.png"
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer-h2-h1">
-        <h1>HG</h1>
-        <h2>Beauty</h2>
-      </div>
       <div className="footer-social-icon">
         <div className="footer-icon-row">
           <div className="footer-icons-container">
@@ -29,7 +25,7 @@ function Footer() {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>&copy; {new Date().getFullYear()} All Right Reserved</p>
+        <p className="footer-copy">&copy; {new Date().getFullYear()} All Right Reserved</p>
       </div>
     </div>
   );
