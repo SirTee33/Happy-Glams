@@ -13,7 +13,7 @@
 }
 .nav-menu{
   list-style: none;
-  gap: 35px;
+  gap: 40px;
   display: flex;
   
 }
@@ -33,20 +33,24 @@
   background-color: rgb(243, 7, 47);
   transition: all 0.3s ease;
 }
+.cart-icon-wrapper {
+  margin-right: 40px;
+}
 .cart-icon-wrapper img {
-  width: 35px;
+  width: 32px;
+  height: 32px;
 }
 .nav-cart-count{
   position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 15px;
-  height: 15px;
+  top: -1px;
+  right: -5px;
+  width: 13px;
+  height: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 10px;
   background: #ec4899;
   color: white;
 }

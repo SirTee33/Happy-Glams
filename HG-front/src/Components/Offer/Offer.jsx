@@ -7,7 +7,7 @@ const Offer = () => {
     <div className='offer'>
       <div className="offer-left">
         <h1>Glams That Turns Heads</h1>
-        <h4>Professional Makeup Services for All Occasions</h4>
+        <h4>Makeup Services for All Occasions</h4>
         <p>Book Now and Let Your Beauty Shine</p>
         <Link to="/contact" button className='book-now-btn'>Book Now</Link>
       </div>

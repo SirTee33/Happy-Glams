@@ -5,21 +5,18 @@ import { CartContext } from '../CartContext/CartContext';
 //import CartIcon from "../CartIcon/CartIcon";
 import cart_icon from "../Videos & Images/cartcount.png";
 import { Link } from "react-router-dom";
-//import { useAuth } from "../../AuthContext";
 import logo from '../Videos & Images/mine logo new 1.png'
 
 function Navbar() {
     const [menu, setMenu] = useState("home");
     const [isOpen, setIsOpen] = useState(false);
     const {getTotalItems}= useContext(CartContext);
-    //const { isLoggedIn, logout } = useAuth();
+    
 
   return(
     <div className="navbar">
       <div className="h2-h1">
         <img src={logo} alt="" />
-        {/* <h1>HG</h1>
-        <h2>Beauty</h2> */}
       </div>
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
@@ -39,12 +36,7 @@ function Navbar() {
         <li onClick={()=>{setMenu("contact"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/contact">CONTACT</Link>{menu==="contact"?<hr/>:<></>}
         </li>
       </ul>
-        {/* <div className="nav-login-cart">
-          {isLoggedIn ? (
-            <button onClick={logout}>Logout</button>
-          ) : (
-            <Link to="/login"><button>Login</button></Link>
-          )} */}
+        
           {/* cart icon */}
           <div className="cart-icon-wrapper" style={{ position: "relative" }}>
             <Link to="/cart"><img src={cart_icon} alt="cart icon" /></Link>
@@ -59,17 +51,6 @@ function Navbar() {
               <span>{getTotalItems()}</span>
             </div>
           </Link> 
-          {/* {isLoggedIn ? (
-            <div className="float-btn login-float" onClick={logout}>
-              Logout
-            </div>
-          ) : (
-            <Link to="/login">
-              <div className="float-btn login-float">
-                <FiLogIn size={18} />
-              </div>
-            </Link>
-          )} */}
         </div> 
     </div>
   )
