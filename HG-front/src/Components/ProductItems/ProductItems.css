@@ -16,12 +16,12 @@
 }
 @media (max-width: 768px) {
   .p-item {
-    height: 35vh;
+    height: 26vh;
   }
 }
 @media (max-width: 480px) {
   .p-item {
-    height: 30vh;
+    height: 32vh;
   }
 }
 .p-item p{
