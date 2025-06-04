@@ -7,7 +7,7 @@ const ProductItems = (props) => {
     <Link to={`/product/${props.id}`} className='p-item-link'>
       <div className="p-item">
         <img src={props.image} alt="" />
-        <p>{props.name}</p>
+        {/* <p>{props.name}</p> */}
         <div className="p-item-prices">
           <div className="p-item-price-new">
           {props.new_price}
