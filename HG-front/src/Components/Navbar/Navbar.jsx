@@ -20,9 +20,15 @@ function Navbar() {
       </div>
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+        {isOpen ? (
+          <span className="close-icon">&times;</span>
+        ) : (
+          <>
+          <span className="bar"></span>
+          <span className="bar"></span> 
+          <span className="bar"></span> 
+          </>
+        )}
       </div>
       <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
         <li onClick={()=>{setMenu("home"); setIsOpen(false)}}><Link style={{textDecoration: "none"}} to="/">HOME</Link>{menu==="home"?<hr/>:<></>}

@@ -61,15 +61,29 @@
   cursor: pointer;
   margin-left: auto;
   margin-right: 80px;
+}
+.hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(5px, 5px);
   }
-.hamburger .bar {
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(6px, -6px);
+  }
+.bar {
   width: 24px;
   height: 2px;
-  background-color: #333;
+  background-color: #da3b8a;
   margin: 3px 0;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
-
+.hamburger .close-icon {
+  font-size: 38px;
+  color: #da3b8a;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
   .cart-icon-wrapper {
@@ -100,15 +114,6 @@
   }
   .hamburger {
     display: flex;
-  }
-  .hamburger .bar.open:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-  }
-  .hamburger .bar.open:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger .bar.open:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
   }
 }
 /* Hide floating buttons on desktop */
